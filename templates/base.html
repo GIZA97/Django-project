@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Название проекта{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Мой Проект</h1> <!-- Замените на название вашего проекта -->
+    </header>
+
+    <div class="container">
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}">Главная</a></li>
+                    <li><a href="{% url 'about' %}">О нас</a></li>
+                    <li><a href="{% url 'contact' %}">Контакты</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            {% block content %}
+            <!-- Контент страницы -->
+            {% endblock %}
+        </main>
+    </div>
+
+    <footer>
+        <p>Иванов Иван Иванович, Группа БИ-21</p> <!-- Укажите свои данные -->
+    </footer>
+</body>
+</html>
