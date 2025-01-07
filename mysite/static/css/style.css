@@ -1,0 +1,96 @@
+/* Общий стиль для страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Шапка */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    max-width: 70%; /* Изображение не выйдет за пределы родительского контейнера */
+    height: auto; /* Сохраняется пропорция изображения */
+    display: block; /* Убирает лишние отступы снизу изображения */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Подвал */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Основной контейнер */
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+.logo {
+    width: 50px; /* Установите нужный размер логотипа */
+    height: auto;
+    margin-right: 15px;
+}
+
+/* Левое меню */
+aside {
+    width: 200px;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-right: 1px solid #ddd;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin: 10px 0;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Основной контент */
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+
+/* Ссылки */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

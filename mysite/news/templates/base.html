@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Название проекта{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="{% static 'logotip/logo.png' %}" type="image/icon type">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="{% static 'logotip/logo.png' %}" alt="Логотип проекта" class="logo">
+            <h1>Инженер-программист</h1> <!-- Название проекта -->
+        </div>
+    </header>
+
+    <div class="container">
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}">Главная</a></li>
+                    {% comment %} <li><a href="{% url 'about' %}">О нас</a></li> {% endcomment %}
+                    {% comment %} <li><a href="{% url 'contact' %}">Контакты</a></li> {% endcomment %}
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            {% block content %}
+            <!-- Контент страницы -->
+            {% endblock %}
+        </main>
+    </div>
+
+    <footer>
+        <p>Гизатуллин Данил Рустамович, Группа РИ-230931</p> <!-- Укажите свои данные -->
+    </footer>
+</body>
+</html>
