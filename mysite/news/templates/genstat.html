@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Общая статистика{% endblock %}
+
+{% block content %}
+<div class="table-responsive">
+    <img src="{% static 'process_all_vacancies/dyn_sal_city.png'%}">
+    {{ table_salary|safe }}
+</div>
+<br>
+<div class="table-responsive">
+    <img src="{% static 'process_all_vacancies/dyn_count_vac.png'%}">
+    {{ table_vacancy|safe }}
+</div>
+<br>
+<div class="table-responsive">
+    <img src="{% static 'process_all_vacancies/lev_sal_city.png'%}">
+    {{ table_city|safe }}
+</div>
+<br>
+<div class="table-responsive">
+    <img src="{% static 'process_all_vacancies/rate_vac_city.png'%}">
+    {{ table_rate|safe }}
+</div>
+<br>
+<div class="table-responsive">
+    <img src="{% static 'process_all_vacancies/skills_2015_g.png'%}">
+    {{ table_2015|safe }}
+</div>
+<br>
+<div class="table-responsive">
+    <img src="{% static 'process_all_vacancies/skills_2016_g.png'%}">
+    {{ table_2016|safe }}
+</div>
+<br>
+<div class="table-responsive">
+    <img src="{% static 'process_all_vacancies/skills_2017_g.png'%}">
+    {{ table_2017|safe }}
+</div>
+<br>
+<div class="table-responsive">
+    <img src="{% static 'process_all_vacancies/skills_2018_g.png'%}">
+    {{ table_2018|safe }}
+</div>
+<br>
+<div class="table-responsive">
+    <img src="{% static 'process_all_vacancies/skills_2019_g.png'%}">
+    {{ table_2019|safe }}
+</div>
+<br>
+<div class="table-responsive">
+    <img src="{% static 'process_all_vacancies/skills_2020_g.png'%}">
+    {{ table_2020|safe }}
+</div>
+<br>
+<div class="table-responsive">
+    <img src="{% static 'process_all_vacancies/skills_2021_g.png'%}">
+    {{ table_2021|safe }}
+</div>
+<div class="table-responsive">
+    <img src="{% static 'process_all_vacancies/skills_2022_g.png'%}">
+    {{ table_2022|safe }}
+</div>
+<div class="table-responsive">
+    <img src="{% static 'process_all_vacancies/skills_2023_g.png'%}">
+    {{ table_2023|safe }}
+</div>
+<div class="table-responsive">
+    <img src="{% static 'process_all_vacancies/skills_2024_g.png'%}">
+    {{ table_2024|safe }}
+</div>
+{% endblock %}
