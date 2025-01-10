@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Общая статистика{% endblock %}
+
+{% block content %}
+<div class="table-responsive">
+    <img src="{% static 'proc_data_need_vac/top_20_skills_2015.png'%}">
+    {{ table_2015|safe }}
+</div>
+<br>
+<div class="table-responsive">
+    <img src="{% static 'proc_data_need_vac/top_20_skills_2016.png'%}">
+    {{ table_2016|safe }}
+</div>
+<br>
+<div class="table-responsive">
+    <img src="{% static 'proc_data_need_vac/top_20_skills_2017.png'%}">
+    {{ table_2017|safe }}
+</div>
+<br>
+<div class="table-responsive">
+    <img src="{% static 'proc_data_need_vac/top_20_skills_2018.png'%}">
+    {{ table_2018|safe }}
+</div>
+<br>
+<div class="table-responsive">
+    <img src="{% static 'proc_data_need_vac/top_20_skills_2019.png'%}">
+    {{ table_2019|safe }}
+</div>
+<br>
+<div class="table-responsive">
+    <img src="{% static 'proc_data_need_vac/top_20_skills_2020.png'%}">
+    {{ table_2020|safe }}
+</div>
+<br>
+<div class="table-responsive">
+    <img src="{% static 'proc_data_need_vac/top_20_skills_2021.png'%}">
+    {{ table_2021|safe }}
+</div>
+<div class="table-responsive">
+    <img src="{% static 'proc_data_need_vac/top_20_skills_2022.png'%}">
+    {{ table_2022|safe }}
+</div>
+<div class="table-responsive">
+    <img src="{% static 'proc_data_need_vac/top_20_skills_2023.png'%}">
+    {{ table_2023|safe }}
+</div>
+<div class="table-responsive">
+    <img src="{% static 'proc_data_need_vac/top_20_skills_2024.png'%}">
+    {{ table_2024|safe }}
+</div>
+{% endblock %}
