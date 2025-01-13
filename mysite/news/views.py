@@ -3,6 +3,7 @@ import pandas as pd
 import json
 import os
 from django.conf import settings
+from . import latest_vac
 
 def home(request):
     return render(request, 'home.html')
@@ -209,7 +210,7 @@ def skills(request):
         'table_2024': table_2024_html,
     })  
 
-def last(request):
-
-    return render(request, 'last.html')
+def latest_vacancies(request):
+    vacancies = latest_vac.fetch_vacancies()
+    return render(request, 'last.html', {'vacancies': vacancies})
 

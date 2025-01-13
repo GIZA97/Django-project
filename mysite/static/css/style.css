@@ -94,3 +94,22 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.last_vac{
+    margin-bottom: 50px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.last_vac p{
+    margin: 0;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.last_vac p:hover{
+    background-color: #FFF;
+}

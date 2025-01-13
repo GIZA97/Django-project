@@ -1,9 +1,20 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 {% load static %}
-
-{% block title %}Востребованность{% endblock %}
-
 {% block content %}
-
-
+    <h2 style="text-align: center; font-size: 30px">Последние вакансии</h2>
+    <ul>
+        {% for vacancy in vacancies %}
+            <li style="list-style: none;">
+                <div class='last_vac'>
+                    <h3>{{ vacancy.name }}</h3>
+                    <b>Описание:</b><p style="margin-left: 30px;"> {{ vacancy.description }}</p>
+                    <b>Навыки:</b><p style="margin-left: 30px;"> {{ vacancy.skills }}</p>
+                    <b>Компания:</b><p style="margin-left: 30px;"> {{ vacancy.company }}</p>
+                    <b>Оклад:</b><p style="margin-left: 30px;"> {{ vacancy.salary }}</p>
+                    <b>Регион:</b><p style="margin-left: 30px;"> {{ vacancy.area }}</p>
+                    <b>Дата публикации:</b><p style="margin-left: 30px;"> {{ vacancy.published_at }}</p>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
 {% endblock %}
