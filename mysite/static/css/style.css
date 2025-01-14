@@ -9,16 +9,18 @@ body {
 
 /* Шапка */
 header {
+    display: flex;
+    flex-direction: column;
     background-color: #4CAF50;
     color: white;
     padding: 20px;
     text-align: center;
 }
 
+
 img {
     max-width: 70%; /* Изображение не выйдет за пределы родительского контейнера */
     height: auto; /* Сохраняется пропорция изображения */
-    display: block; /* Убирает лишние отступы снизу изображения */
 }
 
 header h1 {
@@ -43,7 +45,7 @@ footer {
 }
 
 .logo {
-    width: 50px; /* Установите нужный размер логотипа */
+    width: 80px; /* Установите нужный размер логотипа */
     height: auto;
     margin-right: 15px;
 }
@@ -112,4 +114,100 @@ a:hover {
 
 .last_vac p:hover{
     background-color: #FFF;
+}
+
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #2e7d32; /* Тёмно-зелёный */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-left: 5px solid #66bb6a;
+    padding-left: 15px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+ol {
+    margin-bottom: 30px;
+    padding-left: 20px;
+    color: #444;
+}
+
+ol li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+/* Изображения */
+img {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Блоки заголовков */
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Стили для списков */
+ol {
+    list-style: none;
+    counter-reset: list-counter;
+}
+
+ol li {
+    counter-increment: list-counter;
+    margin: 0 0 15px 0;
+    position: relative;
+    padding-left: 30px;
+}
+
+ol li:before {
+    content: counter(list-counter) ".";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #2e7d32;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Ссылки */
+a {
+    color: #2e7d32;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+    color: #1b5e20;
+    border-bottom: 1px solid #1b5e20;
+}
+
+
+/* Заголовок страницы */
+header {
+    background-color: #2e7d32;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
 }
